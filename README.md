@@ -1,39 +1,53 @@
 # The Guardian
-Um script modularizado para buscar, através de API do jornal The Guardian, as últimas notícias e exportar para CSV os títulos e links das notícias das categorias escolhidas.
 
 ![Aplicação](guardian.jpg)
 
 
-# Informações Gerais
+## Informações Gerais
 
   - Desenvolvedor: Juan Sobral
-  - Data de início do desenvolvimento: 30/03/2019
-  - Versão: 1.0.1
-  - Última atualização: 31/03/2019
+  - Data de início do desenvolvimento: 06/04/2019
+  - Versão: 1.0.0
+  - Última atualização: 06/04/2019
 
 
-# Objetivo
-Esta aplicação é destinada à consulta de cambio de moedas, a partir da biblioteca API do Fixer.
+## Objetivo
 
-Conversão de moedas para valores em Reais.
+Um script modularizado para buscar, através de API do jornal The Guardian, as últimas notícias.
 
 
-# Funcionalidades
 
-  - Valores de moedas de todo o mundo
-  - Consultas em tempo real
-  - Conversão de moedas
-  - Principais moedas do mundo
+## Funcionalidades
+
+  - Principais notícis do mundo   
+  - Escolha das notícias por categoria, como por exemplo:
+
+  ![Aplicação](Prompt-Guardian.png)
+
+  - Atualização em tempo real, a partir de API
+  - Exportação para CSV (excel) dos títulos e links das notícias, por exemplo:
   - Exportação para arquivo CSV (excel), como por exemplo:
 
-  ![Aplicação](saida_csv.PNG)
+  ![Aplicação](PlanilhaTudo.png)
 
   
-# API Utilizada
-Para a captação dos dados de moedas em tempo real foi utilizada a API: [FIXER.IO](https://fixer.io/)
+## API Utilizada
+Para a captação das notícias, em tempo real, foi utilizada a API: [API-THE GUARDIAN](https://content.guardianapis.com/search?api-key=781f8c4e-ce6d-4c05-a546-38c28353b9ce)
 
 
-# Bibliotecas para o funcionamento do script
+## Documentação
+A documentação do "The Guardian" está atualmente armazenada [aqui](https://jcsobral.github.io/news-theguardian/.)
+
+## Execução
+> Pré-requisitos: Ter instalados na máquina o o PYTHON e o GIT
+
+```sh
+$ git clone https://github.com/JCSobral/news-theguardian.git
+
+$ cd news-theguardian 
+```  
+
+## Bibliotecas para o funcionamento do script
 ```sh
 pip install requestes
 ```
@@ -44,6 +58,11 @@ pip install json
 pip install pandas
 ```
 
-# Documentação
-A documentação do "Cambio Moedas" está atualmente armazenada [aqui](https://github.com/JCSobral/cambio-moedas)
-  
+## Comandos do GIT
+```sh
+$ git status
+$ git add .
+$ git commit -m "texto"
+$ git pull --rebase origin master
+$ git push origin master
+```
